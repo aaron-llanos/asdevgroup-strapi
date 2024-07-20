@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "propiedades",
+  "info": {
+    "singularName": "propiedad",
+    "pluralName": "propiedades",
+    "displayName": "Propiedades",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Ubicacion": {
+      "type": "string",
+      "required": true
+    },
+    "Progreso": {
+      "type": "enumeration",
+      "enum": [
+        "Under Construction",
+        "Completed"
+      ],
+      "required": true
+    },
+    "URL": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Unidad": {
+      "type": "string"
+    },
+    "SliderMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "completed",
+        "in-process"
+      ],
+      "required": true
+    },
+    "Detalles": {
+      "type": "json",
+      "required": true
+    },
+    "Tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Multifamily",
+        "Self-Storage",
+        "Residential",
+        "Hospitality"
+      ],
+      "required": true
+    },
+    "Cantidad": {
+      "type": "string"
+    },
+    "PortadaySliderDesktop": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Pais": {
+      "type": "enumeration",
+      "enum": [
+        "MX",
+        "US"
+      ],
+      "required": true
+    }
+  }
+}
